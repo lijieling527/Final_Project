@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/meatballs/taiwan(meatballs).unity
+    guid: c070fa446c36c9e418486666a87b2a8d
+  - enabled: 1
+    path: Assets/Scenes/meatballs/bamboo_shoots1(meatballs).unity
+    guid: fc75889c39970894c85df99a801bf3bb
+  - enabled: 1
+    path: Assets/Scenes/meatballs/mushroom2(meatballs).unity
+    guid: f630f98b52209b8489693ac892adf00a
+  - enabled: 1
+    path: Assets/Scenes/meatballs/bamboo_shoots2(meatballs).unity
+    guid: 2288386203becd54aad2ea8620cc9441
+  - enabled: 1
+    path: Assets/Scenes/meatballs/mushroom1(meatballs).unity
+    guid: 7051744eac4d656459e6b528ab258628
+  - enabled: 1
+    path: Assets/Scenes/meatballs/green_onin1(meatballs).unity
+    guid: dde05f110da23ea4692882cce0c90ebb
+  - enabled: 1
+    path: Assets/Scenes/meatballs/green_onin2(meatballs).unity
+    guid: b1f5fb5daecffea4dbb7c31a9a32fe83
+  - enabled: 1
+    path: Assets/Scenes/meatballs/pork1(meatballs).unity
+    guid: 874cea1c50b35b8409e772527465189e
+  - enabled: 1
+    path: Assets/Scenes/meatballs/pork2(meatballs).unity
+    guid: 6b9a571c7c61b4d4e8fdbb4fe418fe2f
+  - enabled: 1
+    path: Assets/Scenes/meatballs/cucumber1(meatballs).unity
+    guid: 80b9ab634da24d24dac14048f6704cff
+  - enabled: 1
+    path: Assets/Scenes/meatballs/cucumber2(meatballs).unity
+    guid: 95c0cf7b0185de444bd478c03ae59741
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/taiwan(Scallion_pancake).unity
+    guid: c057c32f90de3cc4e9971854d0388904
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/butter1.unity
+    guid: efc8d10300a191f44ba6f48e659aa05e
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/butter2.unity
+    guid: f5cdb8ff19409804591fb80a971adadb
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/egg1.unity
+    guid: a36c1247bf101d94cac31fe04cdcbf6b
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/egg2.unity
+    guid: 8812870623f7349479d7bb4274c51a50
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/flour1.unity
+    guid: 43aafc22fc17635449e1f81f2b0960d6
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/flour2.unity
+    guid: 8dfed04aed45cfe40b28b4e1bbc3cb13
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/pineapple1.unity
+    guid: a1d41a9fa0e82ce4aa9d181c8f448e75
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/pineapple2.unity
+    guid: 6b4f2d390bdabeb4ca7cbb0b6233aec4
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/green_onion1.unity
+    guid: e9d0d2241c75d6c43bb415a8041f2910
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/green_onion2.unity
+    guid: ad70351d28e758a4a877aef8e3b793c0
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/butter1(Scallion_pancake).unity
+    guid: 2b1058da4e0c4a74ba63629df10319b2
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/butter2(Scallion_pancake).unity
+    guid: 61ce0a62c75131b40afab579ade7cbdd
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/egg1(Scallion_pancake).unity
+    guid: d084069abc97cd643bd64e359a2cffbf
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/egg2(Scallion_pancake).unity
+    guid: 5c584f3f9cc0b9c449539e3e185dffed
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/flour1(Scallion_pancake).unity
+    guid: 71ba62a85fb3c1e4685c2eaf5b343d7f
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/flour2(Scallion_pancake).unity
+    guid: 4ffca657fe80923438f7305556db3e1f
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/green_onion1(Scallion_pancake).unity
+    guid: 0c56043ef27dea947a90021e2f1872b4
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/green_onion2(Scallion_pancake).unity
+    guid: 99c9e74bb957603409132da73b7a7348
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/pork1(Scallion_pancake).unity
+    guid: 6e86571d5b5ffad4fa53b9554b7de4a2
+  - enabled: 1
+    path: Assets/Scenes/Scallion_pancake/pork2(Scallion_pancake).unity
+    guid: 4116b0be80c682747b925af501dd08c3
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/taiwan(chickenrice).unity
+    guid: 72da73d8500c6c7439253117bc45cb05
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/chicken1(chickenrice).unity
+    guid: c07af3b5b0405be4e98eb8af97f117a3
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/chicken2(chickenrice).unity
+    guid: 2331290794fc4ab46b22aa68e64c6874
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/cucumber1(chickenrice).unity
+    guid: 2492f93ad5bac954ea6f1ddf92799f82
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/cucumber2(chickenrice).unity
+    guid: 9eee9b67f63342a4880011aed2a56575
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/green_onin1(chickenrice).unity
+    guid: 6e67962b101d15d429812e7dc753e9c6
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/green_onin2(chickenrice).unity
+    guid: 9dbbf5af47a0c6848a1e3b8717c349f5
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/pork1(chickenrice).unity
+    guid: a4fc6aabb0f56e840915444d8c653f50
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/pork2(chickenrice).unity
+    guid: 2f976fa0af7acd241b02647bca2ec06e
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/rice1(chickenrice).unity
+    guid: 04ec4233fc05ac14dabfb02535f77575
+  - enabled: 1
+    path: Assets/Scenes/chickenrice/rice2(chickenrice).unity
+    guid: f33c47b2a734783478e56e0cd1d5b6c8
+  - enabled: 1
+    path: Assets/Scenes/cover.unity
+    guid: 71f10b75a23547943a0e69cf886286b1
+  - enabled: 1
+    path: Assets/Scenes/map.unity
+    guid: 6a79489229c28884ca2e5da30f3ab071
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 363e6d9add42c9244b94c16191023681
+  - enabled: 1
+    path: "Assets/Scenes/\u8089\u5713.unity"
+    guid: 8c8564714603b664483f8be3e296e21f
+  - enabled: 1
+    path: "Assets/Scenes/\u8525\u6CB9\u9905.unity"
+    guid: 8d321622708b6734dabad4ad8029df79
+  - enabled: 1
+    path: "Assets/Scenes/\u96DE\u8089\u98EF.unity"
+    guid: 5485116b40917574cac2881e9a57202c
+  - enabled: 1
+    path: "Assets/Scenes/\u9CF3\u68A8\u9165.unity"
+    guid: d5f221da25e0a394291fd5148d0d53e4
+  - enabled: 1
+    path: Assets/Scenes/pineapplecake/taiwan(pineapple_cake).unity
+    guid: 1d43784db373ffd41aa46bc59cbeafbc
+  m_configObjects: {}
