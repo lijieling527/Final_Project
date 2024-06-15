@@ -77,14 +77,14 @@ public class pork1Scallion_pancake : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("pork1");
+            collectfood_scallionpancake.Instance.CollectIngredient("pork1");
             // NextQuestion();
 
         }
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("pork1");
+            collectfood_scallionpancake.Instance.UnCollectIngredient("pork1");
         }
         buttonclose.onClick.AddListener(MyButtonClickclose);
     }

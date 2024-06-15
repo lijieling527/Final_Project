@@ -80,7 +80,7 @@ public class butter2 : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("butter2");
+            collectfood_pineapplecake.Instance.CollectIngredient("butter2");
             // ReturnToMainScene();
             // NextQuestion();
 
@@ -88,7 +88,7 @@ public class butter2 : MonoBehaviour
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("butter2");
+            collectfood_pineapplecake.Instance.UnCollectIngredient("butter2");
             // collectfood.Instance.CollectIngredient(currentIngredient);
             // ReturnToMainScene();
         }

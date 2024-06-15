@@ -37,9 +37,9 @@ public class ChangeSences_Scallion_pancake : MonoBehaviour
 
     void UpdateCollectedIngredients()
     {
-        List<string> ingredients = collectfood.Instance.GetCollectedIngredients();
+        List<string> ingredients = collectfood_scallionpancake.Instance.GetCollectedIngredients();
         // collectedIngredientsText.text = "收集到的食材:\n" + string.Join("\n", ingredients);
-        List<string> Uningredients = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> Uningredients = collectfood_scallionpancake.Instance.GetUnCollectedIngredients();
         // UncollectedIngredientsText.text = "沒有收集到的食材:\n" + string.Join("\n", Uningredients);
         Debug.Log("ingredients123" + ingredients[0]);
         // foreach (string ingredient in ingredients)
@@ -49,7 +49,7 @@ public class ChangeSences_Scallion_pancake : MonoBehaviour
 
 
         newingredients = DisplayCollectedIngredient(ingredients);
-        collectfood.Instance.OnIngredientsChanged(newingredients);
+        collectfood_scallionpancake.Instance.OnIngredientsChanged(newingredients);
 
         //Debug.Log("1"+collectfood.Instance.GetCollectedIngredients()[0]);
         //Debug.Log("2"+collectfood.Instance.GetUnCollectedIngredients()[0]);
@@ -65,13 +65,13 @@ public class ChangeSences_Scallion_pancake : MonoBehaviour
 
                 // Debug.Log(ingredientName);
                 // Debug.Log(child.name);
-                if (collectfood.Instance.HasCollected(ingredientName) || collectfood.Instance.HasCollected(ingredientName2))
+                if (collectfood_scallionpancake.Instance.HasCollected(ingredientName) || collectfood_scallionpancake.Instance.HasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
                 }
 
-                if (collectfood.Instance.NotHasCollected(ingredientName) || collectfood.Instance.NotHasCollected(ingredientName2))
+                if (collectfood_scallionpancake.Instance.NotHasCollected(ingredientName) || collectfood_scallionpancake.Instance.NotHasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
@@ -97,7 +97,7 @@ public class ChangeSences_Scallion_pancake : MonoBehaviour
         //        break;
         //    }
         //}
-        List<string> ingredientsToRemove = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> ingredientsToRemove = collectfood_scallionpancake.Instance.GetUnCollectedIngredients();
 
         foreach (string ingredient in ingredients)
         {
@@ -118,7 +118,7 @@ public class ChangeSences_Scallion_pancake : MonoBehaviour
         {
             ingredients.Remove(ingredient);
         }
-        collectfood.Instance.OnUNIngredientsChanged(ingredientsToRemove);
+        collectfood_scallionpancake.Instance.OnUNIngredientsChanged(ingredientsToRemove);
 
         //for (int j = 0; j < ingredientSlots.Length; j++)
         //{

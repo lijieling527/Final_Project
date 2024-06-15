@@ -79,7 +79,7 @@ public class butter1Scallion_pancake : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("butter1");
+            collectfood_scallionpancake.Instance.CollectIngredient("butter1");
             // ReturnToMainScene();
             // NextQuestion();
 
@@ -87,7 +87,7 @@ public class butter1Scallion_pancake : MonoBehaviour
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("butter1");
+            collectfood_scallionpancake.Instance.UnCollectIngredient("butter1");
             // collectfood.Instance.CollectIngredient(currentIngredient);
             // ReturnToMainScene();
         }

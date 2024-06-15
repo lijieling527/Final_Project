@@ -71,14 +71,14 @@ public class chicken1chickenrice : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("chicken1");
+            collectfood_chickenrice.Instance.CollectIngredient("chicken1");
             // NextQuestion();
 
         }
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("chicken1");
+            collectfood_chickenrice.Instance.UnCollectIngredient("chicken1");
         }
 
         Invoke("LoadNextScene", waitingTime);

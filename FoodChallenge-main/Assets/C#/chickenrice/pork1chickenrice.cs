@@ -75,14 +75,14 @@ public class pork1chickenrice : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("pork1");
+            collectfood_chickenrice.Instance.CollectIngredient("pork1");
             // NextQuestion();
 
         }
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("pork1");
+            collectfood_chickenrice.Instance.UnCollectIngredient("pork1");
         }
         warning.SetActive(true);
         Invoke("HideHintImage", waitingTime);

@@ -81,7 +81,7 @@ public class green_onion2chickenrice : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("green_onion2");
+            collectfood_chickenrice.Instance.CollectIngredient("green_onion2");
             // ReturnToMainScene();
             // NextQuestion();
 
@@ -89,7 +89,7 @@ public class green_onion2chickenrice : MonoBehaviour
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("green_onion2");
+            collectfood_chickenrice.Instance.UnCollectIngredient("green_onion2");
             // collectfood.Instance.CollectIngredient(currentIngredient);
             // ReturnToMainScene();
         }

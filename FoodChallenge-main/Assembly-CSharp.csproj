@@ -62,6 +62,7 @@
     <Compile Include="Assets\C#\meatballs\豬肉2.cs" />
     <Compile Include="Assets\C#\MusicController.cs" />
     <Compile Include="Assets\C#\pineapplecake\butter1.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\C#\chickenrice\pork1chickenrice.cs" />
     <Compile Include="Assets\C#\chickenrice\green_onion2chickenrice.cs" />
     <Compile Include="Assets\C#\chickenrice\cucumber2chickenrice.cs" />
@@ -70,13 +71,17 @@
     <Compile Include="Assets\C#\ShowMedal.cs" />
     <Compile Include="Assets\C#\meatballs\蔥1.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\flour1Scallion_pancake.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\C#\pineapplecake\egg2.cs" />
     <Compile Include="Assets\C#\pineapplecake\flour2.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\green_onion2Scallion_pancake.cs" />
+    <Compile Include="Assets\C#\pineapplecake\pineapplecakeTimer.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\egg2Scallion_pancake.cs" />
     <Compile Include="Assets\C#\meatballs\meatballsTimer.cs" />
     <Compile Include="Assets\C#\Timer.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\C#\meatballs\黃瓜1.cs" />
+    <Compile Include="Assets\C#\Scallion_pancake\Scallion_pancakeShowMedal.cs" />
     <Compile Include="Assets\C#\meatballs\香菇1.cs" />
     <Compile Include="Assets\C#\meatballs\ChangeSences.cs" />
     <Compile Include="Assets\C#\pineapplecake\pineapple1.cs" />
@@ -86,6 +91,7 @@
     <Compile Include="Assets\C#\meatballs\蔥2.cs" />
     <Compile Include="Assets\C#\meatballs\黃瓜2.cs" />
     <Compile Include="Assets\C#\SceneLoaderManager.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\ChangeSences_Scallion_pancake.cs" />
     <Compile Include="Assets\C#\meatballs\豬肉1.cs" />
     <Compile Include="Assets\C#\pineapplecake\green_onion2.cs" />
@@ -94,11 +100,15 @@
     <Compile Include="Assets\C#\pineapplecake\flour1.cs" />
     <Compile Include="Assets\C#\meatballs\竹筍2.cs" />
     <Compile Include="Assets\C#\pineapplecake\egg1.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\C#\pineapplecake\pineapple2.cs" />
     <Compile Include="Assets\C#\chickenrice\chickenriceShowMedal.cs" />
     <Compile Include="Assets\C#\chickenrice\green_onion1chickenrice.cs" />
+    <Compile Include="Assets\C#\Scallion_pancake\Scallion_pancakeTimer.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\flour2Scallion_pancake.cs" />
-    <Compile Include="Assets\C#\collectfood.cs" />
+    <Compile Include="Assets\C#\pineapplecake\pineapplecakeShowMedal.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\C#\collectfood_chickenrice.cs" />
     <Compile Include="Assets\C#\meatballs\香菇2.cs" />
     <Compile Include="Assets\C#\chickenrice\rice2chickenrice.cs" />
     <Compile Include="Assets\C#\NewBehaviourScript.cs" />
@@ -109,21 +119,14 @@
     <Compile Include="Assets\C#\pineapplecake\green_onion1.cs" />
     <Compile Include="Assets\C#\chickenrice\rice1chickenrice.cs" />
     <Compile Include="Assets\C#\Scallion_pancake\green_onion1Scallion_pancake.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\C#\StartGame.cs" />
     <Compile Include="Assets\C#\MedalManager.cs" />
     <Compile Include="Assets\C#\meatballs\竹筍1.cs" />
     <Compile Include="Assets\C#\chickenrice\chickenriceTimer.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
-    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
-    <Compile Include="Assets\C#\pineapplecake\pineapplecakeTimer.cs" />
-    <Compile Include="Assets\C#\pineapplecake\pineapplecakeShowMedal.cs" />
-    <Compile Include="Assets\C#\Scallion_pancake\Scallion_pancakeTimer.cs" />
-    <Compile Include="Assets\C#\Scallion_pancake\Scallion_pancakeShowMedal.cs" />
+    <Compile Include="Assets\C#\collectfood_scallionpancake.cs" />
+    <Compile Include="Assets\C#\collectfood_pineapplecake.cs" />
+    <Compile Include="Assets\C#\collectfood_meatballs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro 1\Shaders\TMP_SDF.shader" />

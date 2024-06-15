@@ -74,14 +74,14 @@ public class cucumber2chickenrice : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("cucumber2");
+            collectfood_chickenrice.Instance.CollectIngredient("cucumber2");
             // NextQuestion();
 
         }
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("cucumber2");
+            collectfood_chickenrice.Instance.UnCollectIngredient("cucumber2");
         }
         Invoke("LoadNextScene", waitingTime);
     }

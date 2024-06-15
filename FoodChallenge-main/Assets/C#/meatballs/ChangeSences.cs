@@ -40,16 +40,16 @@ public class ChangeSences : MonoBehaviour
 
     void UpdateCollectedIngredients()
     {
-        List<string> ingredients = collectfood.Instance.GetCollectedIngredients();
+        List<string> ingredients = collectfood_meatballs.Instance.GetCollectedIngredients();
         // collectedIngredientsText.text = "收集到的食材:\n" + string.Join("\n", ingredients);
-        List<string> Uningredients = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> Uningredients = collectfood_meatballs.Instance.GetUnCollectedIngredients();
         // UncollectedIngredientsText.text = "沒有收集到的食材:\n" + string.Join("\n", Uningredients);
         int size = ingredients.Count;
         // foreach (string ingredient in ingredients)
         List<string> newingredients;
         // foreach (string ingredient in ingredients)
         newingredients = DisplayCollectedIngredient(ingredients);
-        collectfood.Instance.OnIngredientsChanged(newingredients);
+        collectfood_meatballs.Instance.OnIngredientsChanged(newingredients);
 
         //Debug.Log("1"+collectfood.Instance.GetCollectedIngredients()[0]);
         //Debug.Log("2"+collectfood.Instance.GetUnCollectedIngredients()[0]);.
@@ -66,13 +66,13 @@ public class ChangeSences : MonoBehaviour
 
                 // Debug.Log(ingredientName);
                 // Debug.Log(child.name);
-                if (collectfood.Instance.HasCollected(ingredientName) || collectfood.Instance.HasCollected(ingredientName2))
+                if (collectfood_meatballs.Instance.HasCollected(ingredientName) || collectfood_meatballs.Instance.HasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
                 }
 
-                if (collectfood.Instance.NotHasCollected(ingredientName) || collectfood.Instance.NotHasCollected(ingredientName2))
+                if (collectfood_meatballs.Instance.NotHasCollected(ingredientName) || collectfood_meatballs.Instance.NotHasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
@@ -100,7 +100,7 @@ public class ChangeSences : MonoBehaviour
         //        break;
         //    }
         //}
-        List<string> ingredientsToRemove = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> ingredientsToRemove = collectfood_meatballs.Instance.GetUnCollectedIngredients();
 
         foreach (string ingredient in ingredients)
         {
@@ -121,7 +121,7 @@ public class ChangeSences : MonoBehaviour
         {
             ingredients.Remove(ingredient);
         }
-        collectfood.Instance.OnUNIngredientsChanged(ingredientsToRemove);
+        collectfood_meatballs.Instance.OnUNIngredientsChanged(ingredientsToRemove);
 
         //for (int j = 0; j < ingredientSlots.Length; j++)
         //{

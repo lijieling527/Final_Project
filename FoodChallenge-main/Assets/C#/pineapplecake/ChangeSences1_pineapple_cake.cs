@@ -37,9 +37,9 @@ public class ChangeSences1_pineapple_cake : MonoBehaviour
 
     void UpdateCollectedIngredients()
     {
-        List<string> ingredients = collectfood.Instance.GetCollectedIngredients();
+        List<string> ingredients = collectfood_pineapplecake.Instance.GetCollectedIngredients();
         // collectedIngredientsText.text = "收集到的食材:\n" + string.Join("\n", ingredients);
-        List<string> Uningredients = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> Uningredients = collectfood_pineapplecake.Instance.GetUnCollectedIngredients();
         // UncollectedIngredientsText.text = "沒有收集到的食材:\n" + string.Join("\n", Uningredients);
         int size = ingredients.Count;
         // foreach (string ingredient in ingredients)
@@ -49,7 +49,7 @@ public class ChangeSences1_pineapple_cake : MonoBehaviour
 
 
         newingredients = DisplayCollectedIngredient(ingredients);
-        collectfood.Instance.OnIngredientsChanged(newingredients);
+        collectfood_pineapplecake.Instance.OnIngredientsChanged(newingredients);
         // foreach (string ingredient in ingredients)
         int Count = GameObject.transform.childCount;
 
@@ -64,13 +64,13 @@ public class ChangeSences1_pineapple_cake : MonoBehaviour
 
                 // Debug.Log(ingredientName);
                 // Debug.Log(child.name);
-                if (collectfood.Instance.HasCollected(ingredientName) || collectfood.Instance.HasCollected(ingredientName2))
+                if (collectfood_pineapplecake.Instance.HasCollected(ingredientName) || collectfood_pineapplecake.Instance.HasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
                 }
 
-                if (collectfood.Instance.NotHasCollected(ingredientName) || collectfood.Instance.NotHasCollected(ingredientName2))
+                if (collectfood_pineapplecake.Instance.NotHasCollected(ingredientName) || collectfood_pineapplecake.Instance.NotHasCollected(ingredientName2))
                 {
                     ingredientButton.gameObject.SetActive(false);
                     Count--;
@@ -95,7 +95,7 @@ public class ChangeSences1_pineapple_cake : MonoBehaviour
         //        break;
         //    }
         //}
-        List<string> ingredientsToRemove = collectfood.Instance.GetUnCollectedIngredients();
+        List<string> ingredientsToRemove = collectfood_pineapplecake.Instance.GetUnCollectedIngredients();
 
         foreach (string ingredient in ingredients)
         {
@@ -116,7 +116,7 @@ public class ChangeSences1_pineapple_cake : MonoBehaviour
         {
             ingredients.Remove(ingredient);
         }
-        collectfood.Instance.OnUNIngredientsChanged(ingredientsToRemove);
+        collectfood_pineapplecake.Instance.OnUNIngredientsChanged(ingredientsToRemove);
         int i = 0;
         HashSet<string> uniqueIngredients = new HashSet<string>();
 

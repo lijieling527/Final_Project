@@ -73,7 +73,7 @@ public class 豬肉2 : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("豬肉2");
+            collectfood_meatballs.Instance.CollectIngredient("豬肉2");
             Invoke("LoadNextScene", waitingTime);
             // NextQuestion();
 
@@ -81,7 +81,7 @@ public class 豬肉2 : MonoBehaviour
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("豬肉2");
+            collectfood_meatballs.Instance.UnCollectIngredient("豬肉2");
             Invoke("LoadNextScene", waitingTime);
         }
     }

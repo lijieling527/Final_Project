@@ -73,14 +73,14 @@ public class 黃瓜2 : MonoBehaviour
         if (questions[0].CheckAnswer(selectedOption))
         {
             resultText.text = "答對了！";
-            collectfood.Instance.CollectIngredient("黃瓜2");
+            collectfood_meatballs.Instance.CollectIngredient("黃瓜2");
             // NextQuestion();
 
         }
         else
         {
             resultText.text = $"答錯了，再挑戰其他題吧";
-            collectfood.Instance.UnCollectIngredient("黃瓜2");
+            collectfood_meatballs.Instance.UnCollectIngredient("黃瓜2");
         }
         Invoke("LoadNextScene", waitingTime);
     }
