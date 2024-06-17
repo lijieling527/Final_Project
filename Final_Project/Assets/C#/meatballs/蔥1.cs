@@ -1,0 +1,122 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;    // 記得加這行
+using UnityEngine.SceneManagement;
+
+public class 蔥1 : MonoBehaviour
+{
+    private List<Question> questions;
+    public Text questionText;
+    public Text resultText;
+    public Button buttonA;
+    public Button buttonB;
+    public Button buttonC;
+    public Button buttonD;
+    public Text TextA;
+    public Text TextB;
+    public Text TextC;
+    public Text TextD;
+    float waitingTime = 1f;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        questions = new List<Question>();
+        // 加入問題
+        questions.Add(new Question(
+            "青蔥的哪一部分含有最多的營養成分？",
+            new Dictionary<char, string>
+            {
+                {'A', "根部"},
+                {'B', "中段莖部"},
+                {'C', "頂部綠葉"},
+                {'D', "整株都一樣"}
+            },
+            'C'));
+        questionText.text = questions[0].Content;
+        foreach (var option in questions[0].Options)
+        {
+            GameObject answerText = GameObject.Find("Text" + option.Key);
+            answerText.GetComponentInChildren<Text>().text = option.Value;
+
+        }
+
+        buttonA.onClick.AddListener(MyButtonClickA);
+        buttonB.onClick.AddListener(MyButtonClickB);
+        buttonC.onClick.AddListener(MyButtonClickC);
+        buttonD.onClick.AddListener(MyButtonClickD);
+
+    }
+    void MyButtonClickA()
+    {
+        CheckAnswer('A');
+    }
+    void MyButtonClickB()
+    {
+        CheckAnswer('B');
+    }
+    void MyButtonClickC()
+    {
+        CheckAnswer('C');
+    }
+    void MyButtonClickD()
+    {
+        CheckAnswer('D');
+    }
+
+
+    public void CheckAnswer(char selectedOption)
+    {
+
+        if (questions[0].CheckAnswer(selectedOption))
+        {
+            resultText.text = "答對了！";
+            collectfood_meatballs.Instance.CollectIngredient("蔥1");
+            
+            // NextQuestion();
+
+        }
+        else
+        {
+            resultText.text = $"答錯了，再挑戰其他題吧";
+            collectfood_meatballs.Instance.UnCollectIngredient("蔥1");
+            
+        }
+        
+        Invoke("LoadNextScene", waitingTime);
+
+
+    }
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene("taiwan(meatballs)");
+    }
+    // Update is called once per frame
+
+    void Update()
+    {
+
+    }
+
+
+    public class Question
+    {
+        public string Content { get; set; }
+        public Dictionary<char, string> Options { get; set; }
+        public char CorrectAnswer { get; set; }
+
+        public Question(string content, Dictionary<char, string> options, char correctAnswer)
+        {
+            Content = content;
+            Options = options;
+            CorrectAnswer = correctAnswer;
+        }
+
+        public bool CheckAnswer(char selectedOption)
+        {
+            return char.ToUpper(selectedOption) == char.ToUpper(CorrectAnswer);
+        }
+    }
+
+}
