@@ -6,10 +6,10 @@ ScriptsOnlyBuild:
     - ChangeSences_Scallion_pancake
     - ChangeSences_chickenrice
     - MusicController
-    - Readme
     - Scallion_pancakeTimer
     - ShowMedal
     - StartGame
+    - Sway
     - butter1
     - butter1Scallion_pancake
     - butter2
@@ -1831,7 +1831,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7410}
     - Class: 114
-      Script: {instanceID: 22774}
+      Script: {instanceID: 23502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3375,6 +3375,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6070}
     - Class: 114
       Script: {instanceID: 7410}
+    - Class: 114
+      Script: {instanceID: 47274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3428,6 +3430,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6070}
     - Class: 114
       Script: {instanceID: 7410}
+    - Class: 114
+      Script: {instanceID: 47274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3481,6 +3485,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6070}
     - Class: 114
       Script: {instanceID: 7410}
+    - Class: 114
+      Script: {instanceID: 47274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -3534,6 +3540,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6070}
     - Class: 114
       Script: {instanceID: 7410}
+    - Class: 114
+      Script: {instanceID: 47274}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -4721,6 +4729,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Sway
   platform: 19
   scenePathNames:
   - Assets/Scenes/meatballs/taiwan(meatballs).unity
@@ -4774,4 +4788,4 @@ ScriptsOnlyBuild:
   - "Assets/Scenes/\u96DE\u8089\u98EF.unity"
   - "Assets/Scenes/\u9CF3\u68A8\u9165.unity"
   - Assets/Scenes/pineapplecake/taiwan(pineapple_cake).unity
-  playerPath: C:/Users/USER/Desktop/final_project/final_project.exe
+  playerPath: C:/Users/user/Downloads/FoodChallenge-main/Final_Project/final_project.exe

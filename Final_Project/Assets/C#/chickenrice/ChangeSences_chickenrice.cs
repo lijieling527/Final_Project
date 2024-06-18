@@ -150,6 +150,22 @@ public class ChangeSences_chickenrice : MonoBehaviour
                 Timer.Instance.StopTimer(); // 停止計時器
                 Invoke("LoadNextScene", waitingTime);
                 MedalManager.chickenriceGamePass = true;
+                foreach (Transform child in GameObject.transform)
+                {
+
+                    Button ingredientButton = child.GetComponent<Button>();
+
+
+                    if (ingredientButton != null)
+                    {
+                        GameObject ingredientObject = child.gameObject;
+                        Rigidbody2D rb = ingredientObject.AddComponent<Rigidbody2D>();
+                        rb.velocity = new Vector2(0, -1000f); // 根据需要调整速度
+                        Invoke("DisableIngredientButton", 5f);
+
+                    }
+
+                }
                 break; // 已經集滿三個，跳出循環
             }
         }

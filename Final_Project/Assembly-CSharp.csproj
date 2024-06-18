@@ -108,6 +108,7 @@
     <Compile Include="Assets\C#\Scallion_pancake\flour2Scallion_pancake.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\C#\collectfood_chickenrice.cs" />
+    <Compile Include="Assets\C#\Sway.cs" />
     <Compile Include="Assets\C#\meatballs\香菇2.cs" />
     <Compile Include="Assets\C#\chickenrice\rice2chickenrice.cs" />
     <Compile Include="Assets\C#\NewBehaviourScript.cs" />

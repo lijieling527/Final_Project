@@ -159,6 +159,22 @@ public class ChangeSences : MonoBehaviour
 
                 Invoke("LoadNextScene", waitingTime);
                 MedalManager.meatBallsGamePass = true;
+                foreach (Transform child in GameObject.transform)
+                {
+
+                    Button ingredientButton = child.GetComponent<Button>();
+
+
+                    if (ingredientButton != null)
+                    {
+                        GameObject ingredientObject = child.gameObject;
+                        Rigidbody2D rb = ingredientObject.AddComponent<Rigidbody2D>();
+                        rb.velocity = new Vector2(0, -1000f); // 根据需要调整速度
+                        Invoke("DisableIngredientButton", 5f);
+
+                    }
+
+                }
                 break; // 已經集滿三個，跳出循環
             }
         }

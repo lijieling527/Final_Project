@@ -408,6 +408,7 @@
 "Assets/C#/SceneLoaderManager.cs"
 "Assets/C#/ShowMedal.cs"
 "Assets/C#/StartGame.cs"
+"Assets/C#/Sway.cs"
 "Assets/C#/Timer.cs"
 "Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs"
 "Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs"
